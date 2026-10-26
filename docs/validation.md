@@ -33,6 +33,8 @@ Mac 성공을 Windows AE 성공으로 해석하지 않습니다.
   [AEHostTests](../source/tests/AEHostTests.cpp)를 MinGW로 빌드한 `tests/windows/ae-host-tests.exe`로
   8/16/32bpc 렌더·ROI·취소·legacy render를 실행하고, 설치기 리허설을 합니다. 결과는 커밋별
   [Actions](https://github.com/hyun2xyz/AFTEREFFECT_WRAP/actions)에서 확인합니다.
+  첫 패키지 커밋의 [Windows 실행 기록](https://github.com/hyun2xyz/AFTEREFFECT_WRAP/actions/runs/40341199275)에서
+  위 검사가 모두 통과했습니다(windows-latest, Python 3.13).
 - **미확인: 실제 Windows After Effects에서의 메뉴 등록, Effect Controls, 렌더.**
   처음 Windows에 설치한 수강생·강사는 Effect > Hyun2 > Edge Light Wrap이 보이는지와
   `example/Native Demo.aep`의 결과를 알려 주세요. 확인되면 이 문서에 날짜와 AE 버전을 적습니다.
