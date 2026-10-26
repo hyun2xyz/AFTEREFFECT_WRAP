@@ -1,20 +1,23 @@
 # 처음 시작하기
 
-이 저장소는 **Codex 또는 Claude Code가 링크만 받고 설치까지** 하도록 만든 Edge Light Wrap
-패키지입니다. After Effects는 학생 자신의 Adobe 계정·라이선스로 미리 설치해 둡니다.
+이 저장소는 **Codex 또는 Claude Code가 링크만 받고 포크·설치까지** 하도록 만든 Edge Light Wrap
+패키지입니다. 공통강의의 Git 세팅(Git·GitHub CLI 설치와 `gh` 인증)을 마친 컴퓨터를 기준으로 합니다.
+After Effects는 학생 자신의 Adobe 계정·라이선스로 미리 설치해 둡니다.
 
 ## 1. 에이전트에게 붙여 넣기
 
 에이전트를 아무 폴더에서나 열고 이 문장을 붙여 넣습니다.
 
-> https://github.com/hyun2xyz/AFTEREFFECT_WRAP 이 저장소의 AGENTS.md대로 Edge Light Wrap을
-> 제 컴퓨터에 설치해 주세요. After Effects는 제가 저장하고 직접 종료하겠습니다.
-> Windows 관리자 확인 창은 제가 [예]를 누르겠습니다. 설치 위치와 확인 결과를 알려 주세요.
+> https://github.com/hyun2xyz/AFTEREFFECT_WRAP 를 제 GitHub 계정으로 포크해서 문서(Documents) 폴더에
+> 받고, 받은 폴더의 AGENTS.md대로 Edge Light Wrap을 제 컴퓨터에 설치해 주세요.
+> After Effects는 제가 저장하고 직접 종료하겠습니다. Windows 관리자 확인 창은 제가 [예]를 누르겠습니다.
+> 설치 위치와 확인 결과를 알려 주세요.
 
 에이전트는 이렇게 진행합니다.
 
-1. 저장소를 `문서(Documents)/AFTEREFFECT_WRAP`에 받습니다. Git이 없으면 ZIP으로 받습니다.
-2. AE가 켜져 있으면 저장 후 종료해 달라고 합니다. 학생이 직접 종료합니다.
+1. 내 GitHub 계정에 포크를 만들고 `문서(Documents)/AFTEREFFECT_WRAP`에 받습니다.
+   강사 원본은 `upstream`으로 함께 등록됩니다.
+2. AE가 켜져 있고 바꿀 파일이 있으면 저장 후 종료해 달라고 합니다. 학생이 직접 종료합니다.
 3. Mac은 `mac/`, Windows는 `windows/`의 설치기를 먼저 점검 모드로, 그다음 실제로 실행합니다.
 4. 설치 위치와 확인 결과를 알려 줍니다.
 
@@ -57,7 +60,9 @@ bash "AFTEREFFECT_WRAP-main/mac/Install Edge Light Wrap.command"
 
 ## 4. 업데이트와 제거
 
-- 같은 설치기를 다시 실행하면 이전 버전을 백업 폴더로 옮긴 뒤 새 버전을 설치합니다.
+- 강사가 새 버전을 올리면 [포크로 시작하고 업데이트 받기](docs/fork-and-update.md)의 3번으로
+  강사 원본을 pull한 뒤 같은 설치기를 다시 실행합니다.
+- 설치기를 다시 실행하면 이전 버전을 백업 폴더로 옮긴 뒤 새 버전을 설치합니다.
   같은 버전이면 아무것도 바꾸지 않습니다.
 - 제거: Mac `Uninstall Edge Light Wrap.command`, Windows `Uninstall Edge Light Wrap.cmd`.
   플러그인은 삭제하지 않고 복구 가능한 백업 폴더로 옮깁니다.

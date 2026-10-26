@@ -8,15 +8,18 @@ This repository is the source of its project skill; do not install or change glo
 ## 1. Get the repository
 
 - If the current folder already has `AGENTS.md`, `mac/` and `windows/`, use it.
-- Otherwise download into the student's Documents folder. Do not overwrite an existing folder:
-  update it with `git pull` if it is a clone of this repository, else pick a new name.
-- macOS: run `xcode-select -p` first. If it fails, do not run `git` (it opens an Xcode tools
-  installer); use curl. Never ask the student to download the ZIP with a browser: the quarantine
-  flag makes macOS block the plug-in and the installer stops.
+- Students work in their own fork (`docs/fork-and-update.md`). After the class Git setup,
+  `gh auth status` succeeds: fork into the student's account and clone it into Documents.
+  `gh` registers this repository as `upstream`. Do not overwrite an existing folder; if it is
+  already the student's fork, update it as `docs/fork-and-update.md` section 3 describes.
+- Without the Git setup, download the ZIP with curl (no updates by pull). On macOS, if
+  `xcode-select -p` fails, do not run `git` (it opens an Xcode tools installer). Never ask the
+  student to download the ZIP with a browser: the quarantine flag makes macOS block the plug-in
+  and the installer stops.
 
 ```sh
-git clone --depth 1 https://github.com/hyun2xyz/AFTEREFFECT_WRAP.git ~/Documents/AFTEREFFECT_WRAP
-# without git:
+cd ~/Documents && gh repo fork hyun2xyz/AFTEREFFECT_WRAP --clone
+# without the Git setup:
 curl -fL -o ~/Documents/AFTEREFFECT_WRAP.zip https://github.com/hyun2xyz/AFTEREFFECT_WRAP/archive/refs/heads/main.zip
 ditto -x -k ~/Documents/AFTEREFFECT_WRAP.zip ~/Documents   # creates AFTEREFFECT_WRAP-main
 ```
@@ -24,8 +27,8 @@ ditto -x -k ~/Documents/AFTEREFFECT_WRAP.zip ~/Documents   # creates AFTEREFFECT
 - Windows (any shell; PowerShell commands, not scripts, so no execution policy is involved):
 
 ```powershell
-git clone --depth 1 https://github.com/hyun2xyz/AFTEREFFECT_WRAP.git "$env:USERPROFILE\Documents\AFTEREFFECT_WRAP"
-# without git:
+Set-Location "$env:USERPROFILE\Documents"; gh repo fork hyun2xyz/AFTEREFFECT_WRAP --clone
+# without the Git setup:
 Invoke-WebRequest https://github.com/hyun2xyz/AFTEREFFECT_WRAP/archive/refs/heads/main.zip -OutFile "$env:USERPROFILE\Documents\AFTEREFFECT_WRAP.zip"
 Expand-Archive "$env:USERPROFILE\Documents\AFTEREFFECT_WRAP.zip" "$env:USERPROFILE\Documents"
 ```
@@ -73,6 +76,12 @@ approval of an escalated command; ask for it rather than working around the sand
 - Report separately: files installed, installer checks passed, and what the student saw in AE.
   For Windows, say that real Windows AE loading had not been confirmed when the package was made
   (`docs/validation.md`) and ask them to tell the instructor what they see.
+
+## Updates
+
+When the instructor publishes a new version, merge `upstream/main` into the student's fork as
+`docs/fork-and-update.md` section 3 describes (never reset, force-push or discard their commits),
+push to `origin`, then run the installer again. It backs up the old plug-in before replacing it.
 
 ## Never
 
