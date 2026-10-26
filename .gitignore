@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+source/build/
+work/
+*.aep
+!example/Native Demo.aep
+*.aepx
+*.aep~
+Adobe After Effects Auto-Save/
+*.log

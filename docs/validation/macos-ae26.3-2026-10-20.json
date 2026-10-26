@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-20",
+  "after_effects_version": "26.3.0",
+  "macos_version": "26.4",
+  "machine_architecture": "arm64",
+  "plugin_version": "2.0.0",
+  "effect_name": "Edge Light Wrap",
+  "effect_match_name": "Hyun2 Edge Light Wrap",
+  "effect_menu": "Effect > Hyun2 > Edge Light Wrap",
+  "installed_bundle_files_sha256": {
+    "Contents/Info.plist": "04a24df60b6226ee25862de046d83df5a8e86c1bd5af227e013fdab8beccefba",
+    "Contents/MacOS/EdgeLightWrap": "78e29ed8b552202db1b63283702b2f4fa9640785be6fbf997bb480bba3676b2f",
+    "Contents/PkgInfo": "e13c5afd5f73acd972f0bc6472b86b8b0adf50bb82ed19a4680978469d45675a",
+    "Contents/Resources/EdgeLightWrap.rsrc": "69aa479c217e285696b46f843b8ae381e78f9d9745d686e42459c0a024d101b4",
+    "Contents/_CodeSignature/CodeResources": "0e79f1beb1f86b37934cc3a4e7b4687a66cf5e84a185c4380665a42086c23fa6"
+  },
+  "checks": {
+    "actual_installation": true,
+    "actual_effect_menu_registered": true,
+    "actual_effect_controls_visible": true,
+    "actual_ae_controlled_8bpc_render": true,
+    "center_detail_preserved": true,
+    "blue_edge_color_visible": true,
+    "actual_ae_16bpc_render": false,
+    "actual_ae_32bpc_render": false,
+    "intel_hardware_runtime": false
+  },
+  "pixel_validation": {
+    "source": "actual After Effects 26.3 native rendering",
+    "frame_size": [
+      640,
+      360
+    ],
+    "strength_before": 0,
+    "strength_after": 100,
+    "changed_pixels": 22088,
+    "max_rgb_difference": 217,
+    "samples": [
+      {
+        "x": 320,
+        "y": 180,
+        "before": [
+          38,
+          38,
+          38
+        ],
+        "after": [
+          38,
+          38,
+          38
+        ]
+      },
+      {
+        "x": 400,
+        "y": 180,
+        "before": [
+          38,
+          38,
+          38
+        ],
+        "after": [
+          38,
+          179,
+          255
+        ]
+      },
+      {
+        "x": 405,
+        "y": 180,
+        "before": [
+          38,
+          38,
+          38
+        ],
+        "after": [
+          38,
+          179,
+          255
+        ]
+      },
+      {
+        "x": 410,
+        "y": 180,
+        "before": [
+          10,
+          134,
+          201
+        ],
+        "after": [
+          38,
+          179,
+          255
+        ]
+      },
+      {
+        "x": 230,
+        "y": 180,
+        "before": [
+          28,
+          70,
+          92
+        ],
+        "after": [
+          38,
+          179,
+          255
+        ]
+      },
+      {
+        "x": 240,
+        "y": 180,
+        "before": [
+          38,
+          38,
+          38
+        ],
+        "after": [
+          38,
+          179,
+          255
+        ]
+      },
+      {
+        "x": 320,
+        "y": 95,
+        "before": [
+          38,
+          38,
+          38
+        ],
+        "after": [
+          38,
+          179,
+          255
+        ]
+      },
+      {
+        "x": 20,
+        "y": 20,
+        "before": [
+          0,
+          166,
+          255
+        ],
+        "after": [
+          0,
+          166,
+          255
+        ]
+      }
+    ],
+    "images": {
+      "before.png": "86342b6e6a109bfd89f77d1421d7cf5f3164ae88ed5878f6dde3962ba657f279",
+      "after.png": "4f72eac7b9781c26244f26cfd5e73733b90c12ce3480478de7849aabfe5ebc21",
+      "matte.png": "35110665eef3815ebc411af9030cd16133021cb1738c43da48f96d2906ae8703"
+    }
+  },
+  "test_settings": {
+    "edge_width": 15,
+    "edge_feather": 3,
+    "wrap_spread": 8,
+    "wrap_softness": 9,
+    "background_blur": 25,
+    "strength_before": 0,
+    "strength_after": 100
+  },
+  "render_example": "examples/native-demo",
+  "user_report_followup": {
+    "observed_effect_order": [
+      "Edge Light Wrap",
+      "Object Matte",
+      "Advanced Spill Suppressor"
+    ],
+    "required_effect_order": [
+      "Object Matte",
+      "Advanced Spill Suppressor",
+      "Edge Light Wrap"
+    ],
+    "background_coordinate_requirement": "Use a comp-sized background precomp with scale/position changes inside it for pixel-aligned sampling."
+  },
+  "scope": "Controlled synthetic render and actual effect registration on one Apple Silicon Mac; not a controlled render of the user footage.",
+  "developer_id_signed": false,
+  "apple_notarized": false
+}

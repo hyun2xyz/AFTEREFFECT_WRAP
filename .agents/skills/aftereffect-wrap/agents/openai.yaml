@@ -1,0 +1,4 @@
+interface:
+  display_name: "Aftereffect Wrap"
+  short_description: "Edge Light Wrap 네이티브 AE 효과를 Mac/Windows에 설치하고 사용법을 안내하는 수업용 스킬"
+  default_prompt: "Use $aftereffect-wrap to install Edge Light Wrap on my computer from this repository, verify it, and show me how to apply it in After Effects."

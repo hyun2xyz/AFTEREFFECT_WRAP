@@ -1,0 +1,19 @@
+# Payload bytes must reach every checkout and GitHub ZIP unchanged (hashes and the
+# macOS code signature cover them), so nothing in mac/ or windows/ is line-ending converted.
+mac/** -text
+windows/** -text
+tests/windows/** -text
+*.aep binary
+*.png binary
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.r text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+CMakeLists.txt text eol=lf
+*.cmake text eol=lf
