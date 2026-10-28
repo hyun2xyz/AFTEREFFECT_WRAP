@@ -74,8 +74,9 @@ approval of an escalated command; ask for it rather than working around the sand
 - Ask the student to start AE and apply Effect > Hyun2 > Edge Light Wrap. Optionally open
   `example/Native Demo.aep`. Their answer is the only proof the effect loads in AE.
 - Report separately: files installed, installer checks passed, and what the student saw in AE.
-  For Windows, say that real Windows AE loading had not been confirmed when the package was made
-  (`docs/validation.md`) and ask them to tell the instructor what they see.
+  For Windows, say that the menu and applying the effect were confirmed in real Windows AE, but
+  its render output was not compared yet (`docs/validation.md`); ask them to tell the instructor
+  what they see and their AE version.
 
 ## Updates
 

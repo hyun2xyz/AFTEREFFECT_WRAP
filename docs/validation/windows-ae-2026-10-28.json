@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-28",
+  "source": "instructor's Windows PC, agent audit with the effect checked by the user in After Effects",
+  "after_effects_version": null,
+  "windows_version": null,
+  "plugin_version": "2.0.0",
+  "effect_name": "Edge Light Wrap",
+  "effect_menu": "Effect > Hyun2 > Edge Light Wrap",
+  "payload_sha256": {
+    "EdgeLightWrap.aex": "881f59aaaf8a0f18b78794e4d41ddc54e7263b36e4733767e91a293f6a35312c"
+  },
+  "checks": {
+    "installer_ran": true,
+    "installed_sha256_matched_payload": true,
+    "actual_effect_menu_registered": true,
+    "applied_to_layer": true,
+    "render_pixels_compared": false,
+    "native_demo_aep_checked": false
+  },
+  "not_recorded": ["After Effects version", "Windows version"]
+}

@@ -20,6 +20,7 @@ BUNDLE = MAC / "EdgeLightWrap.plugin"
 AEX = WIN / "EdgeLightWrap.aex"
 HOST_TEST = ROOT / "tests" / "windows" / "ae-host-tests.exe"
 AE_EVIDENCE = ROOT / "docs" / "validation" / "macos-ae26.3-2026-10-20.json"
+WINDOWS_AE_EVIDENCE = ROOT / "docs" / "validation" / "windows-ae-2026-10-28.json"
 WINDOWS_SYSTEM_DLLS = {"kernel32.dll"}
 
 
@@ -71,6 +72,11 @@ class WindowsPayloadTests(unittest.TestCase):
 
     def test_payload_hash(self):
         self.assertEqual(payload(WIN), {"EdgeLightWrap.aex": sha256(AEX)})
+
+    def test_aex_is_the_binary_seen_in_windows_after_effects(self):
+        evidence = json.loads(WINDOWS_AE_EVIDENCE.read_text(encoding="utf-8"))
+        self.assertEqual(evidence["payload_sha256"], {"EdgeLightWrap.aex": sha256(AEX)})
+        self.assertTrue(evidence["checks"]["actual_effect_menu_registered"])
 
     def test_x64_dll_with_ae_entry_points(self):
         self.assertTrue(self.pe.is_x64_dll)

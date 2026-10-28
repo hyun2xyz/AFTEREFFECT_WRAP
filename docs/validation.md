@@ -1,6 +1,6 @@
 # 검증 범위
 
-2026-10-26 KST 기준. 실기 AE에서 확인한 것, 테스트 호스트에서 확인한 것, 확인하지 못한 것을 나눕니다.
+2026-10-28 KST 기준. 실기 AE에서 확인한 것, 테스트 호스트에서 확인한 것, 확인하지 못한 것을 나눕니다.
 Mac 성공을 Windows AE 성공으로 해석하지 않습니다.
 
 ## Mac — `mac/EdgeLightWrap.plugin`
@@ -35,9 +35,13 @@ Mac 성공을 Windows AE 성공으로 해석하지 않습니다.
   [Actions](https://github.com/hyun2xyz/AFTEREFFECT_WRAP/actions)에서 확인합니다.
   첫 패키지 커밋의 [Windows 실행 기록](https://github.com/hyun2xyz/AFTEREFFECT_WRAP/actions/runs/40341199275)에서
   위 검사가 모두 통과했습니다(windows-latest, Python 3.13).
-- **미확인: 실제 Windows After Effects에서의 메뉴 등록, Effect Controls, 렌더.**
-  처음 Windows에 설치한 수강생·강사는 Effect > Hyun2 > Edge Light Wrap이 보이는지와
-  `example/Native Demo.aep`의 결과를 알려 주세요. 확인되면 이 문서에 날짜와 AE 버전을 적습니다.
+- 2026-10-28 강사의 Windows PC에서 **실제 After Effects**로 확인했습니다. 설치기가 설치를 마쳤고,
+  설치된 `.aex`의 SHA-256이 `windows/payload.sha256`과 같았으며, 사용자가 **Effect > Hyun2 >
+  Edge Light Wrap** 메뉴 등록과 레이어 적용을 확인했습니다. 그 `.aex`가 지금 출하본인지 테스트가
+  [검증 기록](validation/windows-ae-2026-10-28.json)으로 매번 확인합니다. AE·Windows 버전은
+  기록하지 못했습니다.
+- **미확인: 실제 Windows AE의 렌더 결과**(Mac 예제와 같은 픽셀인지), `example/Native Demo.aep`,
+  AE 안의 16/32bpc. Windows에서 예제를 열어 본 수강생·강사는 결과와 AE 버전을 알려 주세요.
 - 코드 서명 없음. 실행 파일이 아니라 AE가 불러오는 DLL이므로 SmartScreen 실행 경고 대상은 아닙니다.
 
 ## 설치 위치 근거

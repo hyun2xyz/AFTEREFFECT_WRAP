@@ -22,5 +22,5 @@ AE를 저장 후 종료하고 실행합니다. 설치 위치는 AE가 기록한 
 | `Package file is damaged or changed` | 저장소를 다시 받습니다. |
 | `Another plug-in uses this file name` | 같은 이름의 다른 파일이 있어 덮어쓰지 않았습니다. |
 
-이 Windows 빌드는 실제 Windows After Effects에서 아직 확인되지 않았습니다.
-처음 설치한 뒤 효과가 메뉴에 보이는지 강사에게 알려 주세요. [검증 범위](../docs/validation.md)
+이 Windows 빌드는 2026-10-28 실제 Windows After Effects에서 메뉴 등록과 적용까지 확인했고,
+렌더 결과 비교는 아직입니다. 설치한 뒤 효과의 결과와 AE 버전을 강사에게 알려 주세요. [검증 범위](../docs/validation.md)

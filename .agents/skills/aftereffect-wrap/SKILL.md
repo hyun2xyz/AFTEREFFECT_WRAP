@@ -24,7 +24,8 @@ what has and has not been verified per OS in [validation](../../../docs/validati
 - No security workarounds: no quarantine removal, Gatekeeper or execution-policy changes,
   `sudo`, or force-quitting AE. A refused step is reported, not bypassed.
 - Installed, verified on disk, and seen working in AE are three different results. Report each.
-- Windows real-AE loading was not confirmed when the package was built. Do not claim it.
+- Windows real AE: the menu and applying the effect were confirmed on 2026-10-28; the render
+  output was not compared. Do not claim more than that.
 
 ## Teaching the effect
 

@@ -24,7 +24,7 @@
 | 직접 설치 | `Install Edge Light Wrap.command` | `Install Edge Light Wrap.cmd` 더블 클릭 |
 | 설치 위치 | `~/Library/Application Support/Adobe/Common/Plug-ins/7.0/MediaCore/` | `C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\` |
 | 권한 | 관리자 암호 없음 | 관리자 확인 창(UAC) 1회 |
-| 실제 AE 검증 | AE 26.3에서 설치·메뉴·렌더 확인 | 빌드·로딩·렌더 테스트 통과, **실제 AE는 아직 미확인** |
+| 실제 AE 검증 | AE 26.3에서 설치·메뉴·렌더 확인 | 실제 AE에서 설치·메뉴·적용 확인(2026-10-28), **렌더 결과 비교는 미확인** |
 
 ## 에이전트용 요약
 
